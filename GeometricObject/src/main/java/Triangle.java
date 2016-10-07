@@ -29,22 +29,21 @@ public class Triangle extends GeometricObject {
 		return side3;
 	}
 
-	public double getArea() throws TriangleException{
-		
+	public double getArea() throws TriangleException {
+
 		double srt = (0.5) * (side1 + side2 + side3);
-		double area = Math.sqrt(srt * (srt - side1) * (srt - side2) * (srt - side3));
-		
-		if (area != 0){
-			return area;
-		}else {
-			
-			double tris = getSide1();
-			double tris2 = getSide2();
-			double tris3 = getSide3();
-			
-			throw new TriangleException(tris, tris2, tris3);
-	}
+		double area = 0;
+		double calc = srt * (srt - side1) * (srt - side2) * (srt - side3);
+
+		if ((calc < 0) || (Math.sqrt(calc) == 0)) {
+			throw new TriangleException(this);
+
+		} else {
+			area = Math.sqrt(calc);
 		}
+
+		return area;
+	}
 
 	public double getPerimeter() {
 		double perimeter = (side1 + side2 + side3);
@@ -52,11 +51,23 @@ public class Triangle extends GeometricObject {
 		return perimeter;
 	}
 
-	/* public String toString() {
-		 return ("The triangle has sides of length" + " " + side1 + ", " + side2 + ", " + side3 + " " 
-				 + "and has a perimeter of" + " " + getPerimeter() + " " + "with an area of" 
-				 + " " + getArea() + " " + "and was created on " + " " + getDateCreated()); 
-		 }
-	 */
-	
+	@Override
+	public String toString() {
+		
+		String strMessage = null;
+		
+		try
+		{
+			strMessage =  ("The triangle has sides of length" + " " + getSide1() + ", " + getSide2() + ", " + side3
+					+ " " + "and has a perimeter of" + " " + getPerimeter() + " " + "with an area of" 
+					+ " " + getArea() + " " + "and was created on " + " " + getDateCreated());
+		}
+		catch (TriangleException e)
+		{
+			strMessage = "Invalid Triangle " + e.getTri().side1 + ", " + e.getTri().side2 + ", " 
+						+ e.getTri().side3;
+		}
+		return strMessage;
+	}
+
 }
