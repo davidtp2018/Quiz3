@@ -1,4 +1,4 @@
-
+// Thomas Pennington
 public class Triangle extends GeometricObject {
 
 	private double side1;
