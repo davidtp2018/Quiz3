@@ -1,4 +1,4 @@
-
+//Thomas Pennington
 public abstract class GeometricObject {
 	
 	private String color = "white";
