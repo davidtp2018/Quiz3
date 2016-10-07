@@ -1,3 +1,5 @@
+package pkg.main;
+
 //Thomas Pennington
 public abstract class GeometricObject {
 	

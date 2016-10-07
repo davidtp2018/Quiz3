@@ -1,6 +1,10 @@
+package pkg.main;
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+
+import pkg.main.Triangle;
+import pkg.main.TriangleException;
 
 public class TriangleTest {
 

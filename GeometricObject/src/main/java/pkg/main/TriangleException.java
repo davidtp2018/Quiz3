@@ -1,4 +1,4 @@
-
+package pkg.main;
 public class TriangleException extends Exception{
 	
 	private Triangle tri;
