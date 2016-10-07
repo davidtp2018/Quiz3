@@ -52,11 +52,11 @@ public class Triangle extends GeometricObject {
 		return perimeter;
 	}
 
-	 public String toString() throws TriangleException{
-		 return ("The triangle has sides of length" + " " + side1 + ", " + side2 + ", " + side3 + " " 
-				 + "and has a perimeter of" + " " + getPerimeter() + " " + "with an area of" 
-				 + " " + getArea()); 
-		 }
+	// public String toString() throws TriangleException{
+	//	 return ("The triangle has sides of length" + " " + side1 + ", " + side2 + ", " + side3 + " " 
+	//			 + "and has a perimeter of" + " " + getPerimeter() + " " + "with an area of" 
+	//			 + " " + getArea()); 
+	//	 }
 	 
 	
 }
