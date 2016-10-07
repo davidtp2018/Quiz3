@@ -1,5 +1,4 @@
 // Thomas Pennington
-// Quiz 3
 public class Triangle extends GeometricObject {
 
 	private double side1;
