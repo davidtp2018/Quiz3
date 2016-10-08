@@ -1,7 +1,7 @@
 package pkg.main;
 
 // Thomas Pennington
-// Quiz 3 
+// Quiz 3 Question 1
 public class Triangle extends GeometricObject {
 
 	private double side1;
