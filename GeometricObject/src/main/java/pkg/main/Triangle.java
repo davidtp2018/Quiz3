@@ -61,7 +61,7 @@ public class Triangle extends GeometricObject {
 		
 		try
 		{
-			strMessage =  ("The triangle has sides of length" + " " + getSide1() + ", " + getSide2() + ", " + side3
+			strMessage =  ("The triangle has sides of length" + " " + getSide1() + ", " + getSide2() + ", " + getSide3()
 					+ " " + "and has a perimeter of" + " " + getPerimeter() + " " + "with an area of" 
 					+ " " + getArea() + " " + "and was created on " + " " + getDateCreated());
 		}
