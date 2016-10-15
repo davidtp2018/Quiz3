@@ -11,7 +11,7 @@ public class Triangle extends GeometricObject {
 	
 	// Default constructor for the triangle 
 	
-	public Triangle() {
+	public Triangle(){
 		this.side1 = 1.0;
 		this.side2 = 1.0;
 		this.side3 = 1.0;
