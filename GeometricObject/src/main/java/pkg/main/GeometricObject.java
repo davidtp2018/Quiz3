@@ -1,7 +1,7 @@
 package pkg.main;
 
 //Thomas Pennington
-//Quiz 3.0
+//Quiz 3
 public abstract class GeometricObject {
 	
 	private String color = "white";
